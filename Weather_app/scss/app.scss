@@ -32,18 +32,18 @@
 
 .options {
     font-family: "Oswald", sans-serif;
-    font-size: 25px;
+    font-size: 1.5625em;
     text-align: center;
     color: #4C4B4B;
+    padding-top: 20px;
 }
 
 .data-weather{
   font-family: "Oswald", sans-serif;
-  font-size: 37px;
+  font-size: 2.3125em;
   color: #4C4B4B;
-  text-align: center;
-
-
+  text-align: center;   
+  margin-top: -25px;
 }
 
 
@@ -52,7 +52,7 @@
     font-size: 75px;
     font-family: "Oswald", sans-serif;
     color: #4C4B4B;
-   
+    border-bottom: 3px solid #4C4B4B;
 
 }
 
@@ -62,12 +62,150 @@
     font-family: "Oswald", sans-serif;
     color: #4C4B4B;
     text-align: center;
-    border-top: 2px solid black;
-    padding-top: 15px;
+    border-top: 3px solid #4C4B4B;
+    padding-top: 25px;
+    margin-bottom: 25px;
     
 }
 
 
+.Pacman {
+    padding-top: 25px;
+    
+}
+
+
+
+.canvas-space {
+   
+    background-image: url(../IMG/small-weather.png);
+    
+}
+
+.MainPacman {
+    width: 80%;
+    height: 80%;
+    
+    
+}
+
+
+@-webkit-keyframes eating {
+        0% { opacity: 1;
+        }
+        
+        50% { opacity: 0;
+        }
+        
+        100%{ opacity: 1;
+        }
+}
+    
+    
+    @-webkit-keyframes fly {
+        0% { opacity: 0;
+        }
+        
+        50% { opacity: 1;
+        }
+        
+        100%{ opacity: 0;
+        }
+}
+    
+    .DUCKS2{
+    animation: fly .5s infinite;
+    
+    
+    }
+    .pac_man {
+        
+        animation: eating .5s infinite; 
+        
+        
+        }  
+        
+    
+    .sunShine_1 {
+      animation: eating 3s ease infinite .8s;
+
+       
+        
+    }
+
+    
+    .sunShine_2 {
+      animation: eating 3s ease infinite;
+
+       
+        
+    }
+     
+    .sunShine_3 {
+      animation: eating 3s ease infinite .8s;
+
+       
+        
+    }
+     
+    .sunShine_4 {
+      animation: eating 3s ease infinite;
+
+       
+        
+    }
+     
+    .sunShine_5 {
+      animation: eating 3s ease infinite .8s;
+
+       
+        
+    }
+     
+    .sunShine_6 {
+      animation: eating 3s ease infinite;
+
+       
+        
+    }
+     
+    .sunShine_7 {
+      animation: eating 3s ease infinite .8s;
+
+       
+        
+    }
+    
+     
+    .sunShine_8 {
+      animation: eating 3s ease infinite;
+
+       
+        
+    }
+    
+    
+    .DUCKS{
+     animation: eating .5s infinite;
+        
+        
+    }
+    
+.mini_images{
+
+ height: 40%;
+ width: 40%;
+
+}
+
+
+
+
+
+
+
+
+/* Aqui empieza el de pantalla completa*/
 
 
 
@@ -91,16 +229,17 @@
     background-color: lightgray;
     
 }
-    
 
     
     
 .background-app {
     height: 500px;
+    
 }
 .canvas-space {
     height: 500px;
-    background:#F9F9F9;
+    background-image: url(../IMG/weather-background.png);
+    
 }
 
 
@@ -125,8 +264,8 @@ body {
     font-size: 80px;
     font-family: "Oswald", sans-serif;
     color: #4C4B4B;
-    border-bottom: 2px solid black;
-    margin-top: 25px;
+    border-bottom: 3px solid #4C4B4B;
+    margin-top: 45px;
     padding-bottom: 10px;
 }
 
@@ -164,7 +303,7 @@ body {
     font-family: "Oswald", sans-serif;
     color: #4C4B4B;
     text-align: center;
-    border-top: 2px solid black;
+    border-top: 3px solid #4C4B4B;
     padding-top: 15px;
     
 }
@@ -198,10 +337,99 @@ body {
     height: 250px;
 }
 
+.MainPacman {
+    width: 80%;
+    height: 80%;
+    
+    
+}
+    
+.Normal_images{
+   width: 80%;
+   height: 80%;
+    
+}
+    
+    
+.mini_images{
 
+ height: 90%;
+ width: 90%;
 
+}    
 
+    
+    
+@-webkit-keyframes eating {
+        0% { opacity: 1;
+        }
+        
+        50% { opacity: 0;
+        }
+        
+        100%{ opacity: 1;
+        }
+}
+    
+    
+    @-webkit-keyframes fly {
+        0% { opacity: 0;
+        }
+        
+        50% { opacity: 1;
+        }
+        
+        100%{ opacity: 0;
+        }
+}
+    
+    .DUCKS2{
+    animation: fly .5s infinite;
+    
+    
+    }
+    .pac_man {
+        
+        animation: eating .5s infinite; 
+        
+        
+        }  
+        
+    
+    .sunShine_1 .sunShine_3 .sunShine_5 .sunShine_7  {
+      animation: eating 3s ease infinite .8s;
 
+       
+        
+    }
+
+    
+    .sunShine_2 .sunShine_4 .sunShine_6 .sunShine_8 {
+      animation: eating 3s ease infinite;
+
+       
+        
+    }
+     
+    
+    
+    
+    .DUCKS{
+     animation: eating .5s infinite;
+        
+        
+    }
+    
+    
+    .rain1{
+       animation: fly 1.5s infinite; 
+    }
+    
+    
+    .rain2{
+        animation: eating 1.5s infinite;
+    }
+    
 }
 
 
