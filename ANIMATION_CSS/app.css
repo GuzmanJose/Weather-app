@@ -1,0 +1,431 @@
+
+.menu-top {
+  
+    
+}
+
+/*@font-face{
+    font-family: "Beba";
+    src: url ("IMG/FONT/BebasNeue.otf") format("otf");*/
+
+
+
+
+ .header {
+
+    background-color: lightgray;       
+ }
+
+
+
+
+.place-gps {
+    font-size: 80px;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    color: #4C4B4B;
+}
+
+
+
+.options {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.5625em;
+    text-align: center;
+    color: #4C4B4B;
+    padding-top: 20px;
+}
+
+.data-weather{
+  font-family: "Oswald", sans-serif;
+  font-size: 2.3125em;
+  color: #4C4B4B;
+  text-align: center;   
+  margin-top: -25px;
+}
+
+
+.degrees {
+    text-align: center;
+    font-size: 75px;
+    font-family: "Oswald", sans-serif;
+    color: #4C4B4B;
+    border-bottom: 3px solid #4C4B4B;
+
+}
+
+.line-text {
+
+    font-size: 38px;
+    font-family: "Oswald", sans-serif;
+    color: #4C4B4B;
+    text-align: center;
+    border-top: 3px solid #4C4B4B;
+    padding-top: 25px;
+    margin-bottom: 25px;
+    
+}
+
+
+.Pacman {
+    padding-top: 25px;
+    
+}
+
+
+
+.canvas-space {
+   
+    background-image: url(../IMG/small-weather.png);
+    
+}
+
+.MainPacman {
+    width: 80%;
+    height: 80%;
+    
+    
+}
+
+/*---------------  ANIMATION ------------------  /
+
+   I use the CSS animation because I wanted to animate
+   different parts and layers from 5 different SVG’s 
+   using a simple fade in and fade out. And with CSS 
+   it was easer and cleaner to accomplish.
+
+
+
+
+ / ---------------  ANIMATION ------------------  */ 
+
+
+
+
+@-webkit-keyframes eating {
+        0% { opacity: 1;
+        }
+        
+        50% { opacity: 0;
+        }
+        
+        100%{ opacity: 1;
+        }
+}
+    
+    
+    @-webkit-keyframes fly {
+        0% { opacity: 0;
+        }
+        
+        50% { opacity: 1;
+        }
+        
+        100%{ opacity: 0;
+        }
+}
+    
+    .DUCKS2{
+    animation: fly .5s infinite;
+    
+    
+    }
+    .pac_man {
+        
+        animation: eating .5s infinite; 
+        
+        
+        }  
+        
+    
+    .sunShine_1, .sunShine_3, .sunShine_5, .sunShine_7  {
+      animation: eating 3s ease infinite .8s;
+
+       
+        
+    }
+
+    
+    .sunShine_2, .sunShine_4, .sunShine_6, .sunShine_8 {
+      animation: eating 3s ease infinite;
+
+       
+        
+    }
+     
+    
+    
+    
+    .DUCKS{
+     animation: eating .5s infinite;
+        
+        
+    }
+    
+    
+    .rain1{
+       animation: fly 1.5s infinite; 
+    }
+    
+    
+    .rain2{
+        animation: eating 1.5s infinite;
+    }
+    
+    
+.mini_images{
+
+ height: 40%;
+ width: 40%;
+
+}
+
+
+
+
+
+
+
+
+/* Aqui empieza el de pantalla completa*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 480px) {
+
+
+.header {
+    width: 835px;
+    height: 100px;
+    background-color: lightgray;
+    
+}
+
+    
+    
+.background-app {
+    height: 500px;
+    
+}
+.canvas-space {
+    height: 500px;
+    background-image: url(../IMG/weather-background.png);
+    
+}
+
+
+
+body {
+    background-color: black;
+}
+
+
+    
+    
+    
+.Pacman {
+    padding-top: 25px;
+    
+ 
+}
+
+
+.degrees {
+    text-align: center;
+    font-size: 80px;
+    font-family: "Oswald", sans-serif;
+    color: #4C4B4B;
+    border-bottom: 3px solid #4C4B4B;
+    margin-top: 45px;
+    padding-bottom: 10px;
+}
+
+
+.place-gps {
+    font-size: 80px;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    color: #4C4B4B;
+
+
+}
+.options {
+    font-family: "Oswald", sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color: #4C4B4B;
+    margin-top: -85px;
+    margin-right: -65px;
+}
+
+.data-weather{
+  font-family: "Oswald", sans-serif;
+  font-size: 37px;
+  color: #4C4B4B;
+  text-align: center;
+  margin-right: -65px;
+
+}
+
+
+.line-text {
+
+    font-size: 38px;
+    font-family: "Oswald", sans-serif;
+    color: #4C4B4B;
+    text-align: center;
+    border-top: 3px solid #4C4B4B;
+    padding-top: 15px;
+    
+}
+
+
+
+.segment  {
+    height: 300px;
+    width: 250px;
+    background-color: white;
+    margin-top: 35px;
+  
+}
+
+.segment-left {
+      margin-left: 5.3125em;
+    margin-bottom: 35px;
+}
+
+.segment-right {
+        margin-right: 5.3125em;
+}
+
+.Segment-background {
+    background-color: #686565;
+}
+
+
+.footer  {
+    background-color: darkgray;
+    height: 250px;
+}
+
+.MainPacman {
+    width: 80%;
+    height: 80%;
+    
+    
+}
+    
+.Normal_images{
+   width: 80%;
+   height: 80%;
+    
+}
+    
+    
+.mini_images{
+
+ height: 90%;
+ width: 90%;
+
+}    
+
+    
+    
+@-webkit-keyframes eating {
+        0% { opacity: 1;
+        }
+        
+        50% { opacity: 0;
+        }
+        
+        100%{ opacity: 1;
+        }
+}
+    
+    
+    @-webkit-keyframes fly {
+        0% { opacity: 0;
+        }
+        
+        50% { opacity: 1;
+        }
+        
+        100%{ opacity: 0;
+        }
+}
+    
+    .DUCKS2{
+    animation: fly .5s infinite;
+    
+    
+    }
+    .pac_man {
+        
+        animation: eating .5s infinite; 
+        
+        
+        }  
+        
+    
+    .sunShine_1, .sunShine_3, .sunShine_5, .sunShine_7  {
+      animation: eating 3s ease infinite .8s;
+
+       
+        
+    }
+
+    
+    .sunShine_2, .sunShine_4, .sunShine_6, .sunShine_8 {
+      animation: eating 3s ease infinite;
+
+       
+        
+    }
+     
+    
+    
+    
+    .DUCKS{
+     animation: eating .5s infinite;
+        
+        
+    }
+    
+    
+    .rain1{
+       animation: fly 1.5s infinite; 
+    }
+    
+    
+    .rain2{
+        animation: eating 1.5s infinite;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
