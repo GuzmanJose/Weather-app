@@ -11,7 +11,15 @@
     src: url ("IMG/FONT/BebasNeue.otf") format("otf");*/
 
 
-
+.title{
+    text-align: center;
+    font-size: 30px;
+    font-family: "Oswald", sans-serif;
+    color: #4C4B4B;
+    padding-top: 40px;
+    text-shadow: 3px 3px 7px #7F7E7E;
+    margin-bottom: 20px;
+}
 
  .header {
 
@@ -90,6 +98,7 @@
 }
 
 
+    
 @-webkit-keyframes eating {
         0% { opacity: 1;
         }
@@ -126,7 +135,7 @@
         }  
         
     
-    .sunShine_1 {
+    .sunShine_1, .sunShine_3, .sunShine_5, .sunShine_7  {
       animation: eating 3s ease infinite .8s;
 
        
@@ -134,55 +143,14 @@
     }
 
     
-    .sunShine_2 {
+    .sunShine_2, .sunShine_4, .sunShine_6, .sunShine_8 {
       animation: eating 3s ease infinite;
 
        
         
     }
      
-    .sunShine_3 {
-      animation: eating 3s ease infinite .8s;
-
-       
-        
-    }
-     
-    .sunShine_4 {
-      animation: eating 3s ease infinite;
-
-       
-        
-    }
-     
-    .sunShine_5 {
-      animation: eating 3s ease infinite .8s;
-
-       
-        
-    }
-     
-    .sunShine_6 {
-      animation: eating 3s ease infinite;
-
-       
-        
-    }
-     
-    .sunShine_7 {
-      animation: eating 3s ease infinite .8s;
-
-       
-        
-    }
     
-     
-    .sunShine_8 {
-      animation: eating 3s ease infinite;
-
-       
-        
-    }
     
     
     .DUCKS{
@@ -191,10 +159,22 @@
         
     }
     
+    
+    .rain1{
+       animation: fly 1.5s infinite; 
+    }
+    
+    
+    .rain2{
+        animation: eating 1.5s infinite;
+    }
+    
+    
 .mini_images{
 
  height: 40%;
  width: 40%;
+ display: none;    
 
 }
 
@@ -205,7 +185,7 @@
 
 
 
-/* Aqui empieza el de pantalla completa*/
+/* Aqui empieza el de pantalla completa */
 
 
 
@@ -222,7 +202,15 @@
 
 @media only screen and (min-width: 480px) {
 
-
+.title{
+    font-size: 60px;
+    font-family: "Oswald", sans-serif;
+    color: #4C4B4B;
+    padding-top: 60px;
+    text-shadow: 3px 3px 7px #7F7E7E;
+    margin-bottom: 60px;
+}
+    
 .header {
     width: 835px;
     height: 100px;
@@ -355,7 +343,7 @@ body {
 
  height: 90%;
  width: 90%;
-
+ display: block;
 }    
 
     
@@ -396,7 +384,7 @@ body {
         }  
         
     
-    .sunShine_1 .sunShine_3 .sunShine_5 .sunShine_7  {
+    .sunShine_1, .sunShine_3, .sunShine_5, .sunShine_7  {
       animation: eating 3s ease infinite .8s;
 
        
@@ -404,7 +392,7 @@ body {
     }
 
     
-    .sunShine_2 .sunShine_4 .sunShine_6 .sunShine_8 {
+    .sunShine_2, .sunShine_4, .sunShine_6, .sunShine_8 {
       animation: eating 3s ease infinite;
 
        
