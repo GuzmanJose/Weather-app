@@ -11,7 +11,11 @@
     src: url ("IMG/FONT/BebasNeue.otf") format("otf");*/
 
 
-
+.title {
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    color: #4C4B4B;     
+}
 
  .header {
 
@@ -204,6 +208,17 @@
 
 @media only screen and (min-width: 480px) {
 
+    
+    
+    
+    
+    
+.title {
+    font-size: 80px;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    color: #4C4B4B;     
+}    
 
 .header {
     width: 835px;
@@ -243,7 +258,7 @@ body {
 
 .degrees {
     text-align: center;
-    font-size: 80px;
+    font-size: 1500px;
     font-family: "Oswald", sans-serif;
     color: #4C4B4B;
     border-bottom: 3px solid #4C4B4B;
@@ -340,7 +355,7 @@ body {
 
 }    
 
-    
+    /*---------------  ANIMATION ------------------  */
     
 @-webkit-keyframes eating {
         0% { opacity: 1;
